@@ -1,0 +1,14 @@
+2019-02-13 21:20:56.687 -03 [2416] LOG:  listening on IPv6 address "::1", port 5432
+2019-02-13 21:20:56.687 -03 [2416] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-02-13 21:20:56.688 -03 [2416] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-02-13 21:20:56.930 -03 [2417] LOG:  database system was shut down at 2019-02-13 17:17:08 -03
+2019-02-13 21:20:56.944 -03 [2416] LOG:  database system is ready to accept connections
+2019-02-13 22:40:47.982 -03 [5248] ERROR:  argument of WHERE must be type boolean, not type integer at character 58
+2019-02-13 22:40:47.982 -03 [5248] STATEMENT:  SELECT "person_projects".* FROM "person_projects" WHERE (12)
+2019-02-13 22:41:51.215 -03 [5248] ERROR:  argument of WHERE must be type boolean, not type integer at character 58
+2019-02-13 22:41:51.215 -03 [5248] STATEMENT:  SELECT "person_projects".* FROM "person_projects" WHERE (12)
+2019-02-13 23:49:44.622 -03 [8137] FATAL:  database "carritocopia_development" does not exist
+2019-02-14 01:12:03.177 -03 [2416] LOG:  received smart shutdown request
+2019-02-14 01:12:03.179 -03 [2416] LOG:  background worker "logical replication launcher" (PID 2423) exited with exit code 1
+2019-02-14 01:12:03.179 -03 [2418] LOG:  shutting down
+2019-02-14 01:12:03.191 -03 [2416] LOG:  database system is shut down

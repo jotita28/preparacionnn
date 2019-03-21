@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<h2 class= "text-center">
+  <strong>Project <%= @project.name %></strong>
+</h2>
+
+<table class="table table-striped">
+<thead class="thead-dark">
+<tr>
+<th class="text-center">Member</th>
+</tr>
+</thead>
+<tbody>
+  <% @project.person_projects.each do |person| %>
+  <tr>
+  <td class="text-center"><%= person.person.name %></td>
+  </tr>
+  <%end%>
+  </tbody>
+</table>
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

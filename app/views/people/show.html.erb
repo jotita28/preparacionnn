@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @person.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @person.age %>
+</p>
+
+<p>
+  <strong>Profession:</strong>
+  <%= @person.profession %>
+</p>
+
+<p>
+  <strong>Assigned Projects:</strong>
+  <% @perpro.each do |properson|%>
+  <%= properson.project.name%> 
+  <%= link_to person_person_project_path(@person,properson), method: :delete do %>
+  <i class="fas fa-exclamation-triangle"></i>
+  <% end %>| |
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>
